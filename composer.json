@@ -1,0 +1,20 @@
+{
+    "name": "prequels/prequel",
+    "description": "Prequel is a PHP mini manager for converting MySQL data into JSON",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Martins Gouveia",
+            "email": "gouveiamartins6@gmail.com",
+            "homepage": "https://martinssilva.github.io/",
+            "role": "Developer"
+        }
+    ],
+    
+    "autoload": {
+        "psr-4": {
+            "Prequel\\": "Prequel"
+        }
+    }
+}
