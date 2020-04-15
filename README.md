@@ -1,40 +1,32 @@
 <p align="center">
     <br><br>
     <img src="#" height="100"/>
-    <h1 align="center">Prequel PHP Manager</h1>
+    <h1 align="center">transon PHP Class</h1>
     <br>
     <br><br><br>
 </p>
 
 
-[![Latest Stable Version](https://poser.pugx.org/leafs/leaf/v/stable)](https://packagist.org/packages/leafs/leaf)
-[![Total Downloads](https://poser.pugx.org/leafs/leaf/downloads)](https://packagist.org/packages/leafs/leaf)
-[![License](https://poser.pugx.org/leafs/leaf/license)](https://packagist.org/packages/leafs/leaf)
+# transon
+transon is a PHP mini class for converting MySQL data into JSON fast and quickly.
 
-
-# Prequel
-Prequel is a PHP mini manager for converting MySQL data into JSON fast and quickly.
-
-## Installation
-
-It's recommended that you use [Composer](https://getcomposer.org/) to install Prequel.
 
 ```bash
-$ composer require prequels/prequel
+$ git clone  https://github.com/MartinsSilva/transon.git
 ```
 
-This will install Prequel in your project directory.
+This will download transon in your project directory.
 
 ## Basic Usage
-This is a simple demmonstration of Prequel's simplicity.
-After [installing](#installation) Prequel, create an _index.php_ file.
+This is a simple demmonstration of transon's simplicity.
+After  download 'transon', create an _index.php_ file.
 
 ```php
 <?php
 
 require __DIR__ . '/../vendor/autoload.php';
 
-// Instantiate Prequel and Database
+// Instantiate transon and Database
 $prequel = new \Prequel\Prequel;
 $database = new \Prequel\database\Database;
 
@@ -44,7 +36,7 @@ $database->connect("host", "user", "password", "your database");
 //takes all the data from the table
 $data = $database->findAll("your table");
 
-//converts your data returned from the table in simple JSON from a Prequel method
+//converts your data returned from the table in simple JSON from a transon method
 $jsonEncode = $prequel->convert_json($data);
 
 //shows the data on the screen
